@@ -32,7 +32,7 @@ app.get(routes.home, (req, res) => {
 
 app.get(routes.about, (req, res) => {
     const data = {
-        title: 'About Page',
+        title: 'About Us',
         message: 'Learn more About Us.'
     };
     res.render('about', data);
@@ -40,7 +40,7 @@ app.get(routes.about, (req, res) => {
 
 app.get(routes.users, (req, res) => {
     const data = {
-        title: 'Users Page',
+        title: 'Users',
         message: 'List of Users',
         users: [
             { name: 'Alice', age: 25 },
