@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
     "start": "node ./src/server.js"
   },
   "keywords": [],
@@ -13,5 +15,8 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2"
   }
 }
