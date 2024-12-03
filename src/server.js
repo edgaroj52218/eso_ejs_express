@@ -2,7 +2,7 @@
 
 const express = require('express');
 const path = require('path');
-const routes = require('./routes'); // Import the route registry
+const routes = require('./routes/routes'); // Import the route registry
 const { url } = require('./helpers/urlHelper'); // Import the URL helper
 
 const app = express();
